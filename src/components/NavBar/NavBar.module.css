@@ -1,0 +1,82 @@
+.main-header {
+  margin-bottom: 8rem;
+  margin-top: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logoWrapper {
+  max-width: 20rem;
+}
+
+.linksWrapper {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 4rem;
+}
+
+.mainMenu {
+  ul {
+    display: flex;
+    align-items: center;
+    gap: 4.5rem;
+  }
+
+  li {
+    font-size: 0.75rem;
+    line-height: 2.4rem;
+    font-weight: 500;
+    color: var(--t-white-menu);
+  }
+}
+
+.menuLink:hover {
+  color: var(--t-hoover-menu);
+}
+
+
+.navButton {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #334850;  
+  cursor: pointer;
+}
+
+
+.button {
+  width: 130px;
+  height: 45px;
+  color: var(--t-white);
+  background-color: var(--bk-menu-button);
+  border-radius: 1.5rem;
+  border: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+
+@media (max-width: 768px) {
+  
+
+  .main-header { 
+  overflow: hidden;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 4rem;
+}
+  .button { 
+  display: none;}
+}

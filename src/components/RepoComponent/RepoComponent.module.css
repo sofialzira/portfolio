@@ -1,0 +1,103 @@
+.repoContainerGeneral {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bk-container);
+    width: 94%;
+    height: 280px;
+    border-radius: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.103); 
+}
+
+
+.repoImageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.3rem;
+}
+
+
+.repoImage {
+    object-fit: cover;
+    overflow: hidden;
+    width: 90%;
+    height: 150px;
+    border-radius: 1rem;
+    
+    }
+
+.repoinfoContainer {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-top: 2rem;
+}
+
+.repoInfoTextContainer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    gap: 0.5rem;
+}
+
+
+.repoName {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--t-gray-body);
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+
+.repoLanguage {
+    display: inline-block;
+    vertical-align: middle;
+    color: var(--t-white);
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+
+}
+
+.lastUpdate {
+    display: inline-block;
+    vertical-align: middle;
+    color: var(--t-white);
+    font-size: 1.2rem;
+    font-weight: 600;
+
+}
+
+
+.repoAge {
+    display: inline-block;
+    vertical-align: middle;
+    color: var(--t-gray-body);
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-top: 0.5rem;
+
+}
+
+
+.infoButton {
+    display: flex;
+    margin-right: 1rem;
+    font-size: 3rem;
+    color: rgb(64, 64, 64);
+    justify-content: flex-end;
+    margin-bottom: 2rem;
+    margin-top: -40px;
+}
+
+.infoButton:hover {
+    color: white;
+  }
+  

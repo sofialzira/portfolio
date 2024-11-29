@@ -1,0 +1,149 @@
+.row1about {
+    display: flex;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .row1col1about {
+    width: 30%;
+  }
+
+
+.col2about {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+   
+
+}
+
+.sub-row1about {
+    display: flex;
+    width: 100%;
+    padding-left: 3%;
+    align-items: flex-end;
+
+}
+
+.row2about {
+        margin-bottom: 20px;
+        width: 100%;
+        display: flex;
+        gap: 1%
+      
+}
+
+.row2col1about {
+    width: 50%;
+}
+.row2col2about {
+    width: 50%;
+}
+
+
+
+.row3about {
+    margin-bottom: 20px;
+    width: 100%;
+    display: flex;
+}
+
+.row3col1about {
+    width: 25%;
+    display: flex;
+    align-items: center;
+}
+
+.row3col2about {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.row3col3about {
+    width: 25%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+@media (max-width: 768px) {
+  
+    .row1about {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+    }
+
+    .row1col1about {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .sub-row1about {
+        padding-left: 0%;
+    }
+
+    .row2about {  
+        width: 100%;
+        display: flex;
+        gap: 1%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .col2about {
+        width: 90%;
+    }
+
+    .row2col1about {
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .row2col2about {
+        width: 90%;
+        }
+    
+
+    .row3about {
+        margin-bottom: 20px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    
+    .row3col1about {
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .row3col2about {
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .row3col3about {
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+}
+
+  

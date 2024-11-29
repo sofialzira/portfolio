@@ -1,0 +1,113 @@
+.bioContainerGeneral {
+  display: flex;
+  align-items: center;
+  background: var(--bk-container);
+  width: 96%;
+  height: 31rem;
+  border-radius: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.103);
+}
+
+.imageContainer,
+.infoContainer {
+  position: relative;
+  width: 50%;
+  height: 100%;
+}
+
+.imageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.infoContainer {
+    display: flex;
+    align-items: flex-start;
+    text-align: left;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.infoTextContainer {
+  margin-top: 6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+
+}
+
+.bioJob {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--t-gray-body);
+  text-transform: uppercase;
+}
+
+.bioName {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--t-white);
+}
+
+.bioDescription {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--t-gray-body);
+  line-height: 16px;
+  margin-top: 3rem;
+  margin-right: 2rem;
+  margin-left: 1rem;
+}
+
+.bioJob, .bioName {
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+
+.infoButtonContainer {
+  align-self: flex-end;
+}
+
+.infoButton {
+    margin-right: 1rem;
+    font-size: 3rem;
+    color: var(--bk-round-button);
+}
+
+.infoButton:hover {
+  color: white;
+}
+
+
+.bioImage {
+width: 85%;
+height: auto;
+border-radius: 2rem 0.5rem;
+}
+
+
+
+@media (max-width: 768px) {
+
+.bioContainerGeneral {
+  width: 100%;
+}
+
+.infoTextContainer {
+  margin-top: 3rem;
+}
+
+.imageContainer {
+  height: 90%;
+}
+}

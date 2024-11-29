@@ -1,0 +1,42 @@
+.logoContainer {
+    height: 8rem;
+    margin-top: 8rem;
+} 
+
+.linksWrapper {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 4rem;
+}
+
+.mainMenu {
+    ul {
+        display: flex;
+        align-items: center;
+        gap: 4rem;
+    }
+
+    li {
+        line-height: 2.4rem;
+        font-weight: 500;
+        color: var(--t-grey-menu);
+        text-transform: uppercase;
+    }
+}
+
+.menuFooter:hover {
+    color: var(--t-hoover-menu);
+  }
+
+.menuFooter {
+    font-size: 1rem;
+}
+
+.copywright {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.665);
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}

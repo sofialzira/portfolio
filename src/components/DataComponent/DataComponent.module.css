@@ -1,0 +1,12 @@
+.dataContainerGeneral {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--bk-container);
+    width: 98%;
+    height: 210px;
+    border-radius: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.103); 
+    justify-content: space-around;
+    align-items: center;
+}
+
