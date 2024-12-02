@@ -1,23 +1,21 @@
-import {Link} from 'react-router-dom';
 import logo from '../../assets/sofiawoodlogo.svg'
 import style from './NavBar.module.css'
 
-function NavBar() {
+function NavBar(props:any) {
+    const {setSelectedComponent} = props;
 
     return (
         <div className={style['main-header']}>
             <div className={`${style.logoWrapper}`}>
-                <Link to="/home">
-                <img src={logo} alt="logo" />
-                </Link>
+                <img src={logo} alt="logo" onClick={() => {setSelectedComponent('home')}}/>
             </div>
 
             <nav className={style.linksWrapper}>
                 <div className={style.mainMenu}>
                     <ul>
-                        <li><a className={style.menuLink} href="home">Home</a></li>
-                        <li><a className={style.menuLink} href="about">About</a></li>
-                        <li><a className={style.menuLink} href="projects">Projects</a></li>
+                        <li><a className={style.menuLink} onClick={() => {setSelectedComponent('home')}}>Home</a></li>
+                        <li><a className={style.menuLink} onClick={() => {setSelectedComponent('about')}}>About</a></li>
+                        <li><a className={style.menuLink} onClick={() => {setSelectedComponent('projects')}}>Projects</a></li>
                 
                     </ul>
                 </div>

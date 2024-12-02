@@ -1,6 +1,4 @@
 import "./Projects.css";
-import NavBar from "../../components/NavBar/NavBar";
-import Footer from "../../components/Footer/FooterComponent";
 import BioTitle from "../../components/BioTitle/BioTitleComponent";
 import Repo from "../../components/RepoComponent/RepoComponent";
 import reactImage from '../../assets/react.jpg';
@@ -13,18 +11,16 @@ import typescriptImage from '../../assets/typescript.webp';
 import { useEffect, useState } from "react";
 
 function Projects() {
-  let counter: number = 1;
+
   const [hasLoaded, setHasLoaded] = useState(false);
   const [repoData, setRepoData] = useState<any>(null);
 
   const API_URL = "https://api.github.com/users/sofialzira/repos";
 
   async function loadData() {
-    console.log(counter++)
     try {
       const response = await fetch(API_URL);
       await response.json().then((results) => {
-        console.log(results);
         setRepoData(results);
         setHasLoaded(true);
       });
@@ -122,9 +118,7 @@ function Projects() {
 
   return (
     <>
-      <NavBar />
         {getRepos()}
-      <Footer />
     </>
   );
 }

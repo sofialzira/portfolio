@@ -13,6 +13,7 @@ import projectsImage from '../../assets/projects.jpg';
 
 
 function About() {
+
     let educationItems = [
 
         {"year":"2023 - 2024",
@@ -54,7 +55,6 @@ function About() {
     ]
     return(
         <>
-        <NavBar />
         <div>
         <div className="row1about">
             <div className="row1col1about"> 
@@ -103,10 +103,6 @@ function About() {
 
         </div>
         </div>
-        
-
-
-        <Footer />
         </>
     )
 }

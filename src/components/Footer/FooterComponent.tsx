@@ -1,8 +1,8 @@
 import style from './FooterComponent.module.css';
 import logo from '../../assets/sofiawoodlogo.svg'
 
-function Footer() {
-
+function Footer(props:any) {
+    const {setSelectedComponent} = props;
     return(
         <div className={style.footer}>
         <div className={style.logoContainer}>
@@ -12,9 +12,9 @@ function Footer() {
          <nav className={style.linksWrapper}>
                 <div className={style.mainMenu}>
                     <ul>
-                        <li><a href="home"> <span className={style.menuFooter}> Home</span></a></li>
-                        <li><a href="about"><span className={style.menuFooter}> About</span></a></li>
-                        <li><a href="projects"><span className={style.menuFooter}> Projects</span></a></li>
+                        <li><a onClick={() => {setSelectedComponent('home')}}> <span className={style.menuFooter}> Home</span></a></li>
+                        <li><a onClick={() => {setSelectedComponent('about')}}><span className={style.menuFooter}> About</span></a></li>
+                        <li><a onClick={() => {setSelectedComponent('projects')}}><span className={style.menuFooter}> Projects</span></a></li>
                     </ul>
                 </div>
                 

@@ -5,7 +5,7 @@ import bioImage from '../../assets/bio-image.png';
 
 
 function BioContainer(props:any) {
-    const { bioJob, bioName, bioDescription } = props;
+    const { bioJob, bioName, bioDescription, setSelectedComponent } = props;
 
 
     return (
@@ -21,7 +21,7 @@ function BioContainer(props:any) {
                 </div>
                 <div className={style.infoButtonContainer}>
     
-                <a className={style.infoButton} href="about">
+                <a className={style.infoButton} onClick={()=>{setSelectedComponent('about')}}>
                 <CiCircleChevRight /></a>
                 </div>
             </div>

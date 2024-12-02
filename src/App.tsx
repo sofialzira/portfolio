@@ -1,26 +1,37 @@
 import "./App.css";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Homepage from "./pages/Home";
 import About from "./pages/AboutPage/About";
 import Projects from "./pages/ProjectsPage/Projects";
+import { useState, useEffect } from "react";
+import NavBar from "./components/NavBar/NavBar";
+import Footer from "./components/Footer/FooterComponent";
 
 function App() {
+  const [selectedComponent, setSelectedComponent] = useState("home");
+
+  useEffect(() => {
+    renderComponent();
+  }, [selectedComponent]);
+
+  const renderComponent = () => {
+    switch (selectedComponent) {
+      case "about":
+        return <About/>;
+      case "projects":
+        return <Projects/>;
+      case "home":
+      default:
+        return <Homepage setSelectedComponent={setSelectedComponent}/>;
+    }
+  };
+
   return (
     <>
-
-    <BrowserRouter>
-      <Routes>
-
-    <Route index element={<Homepage/>} />
-    <Route path="/home" element={<Homepage/>} />
-    <Route path="/about" element={<About/>} />
-    <Route path="/projects" element={<Projects/>} />
-
-
-    </Routes>
-    </BrowserRouter>
+      <NavBar setSelectedComponent={setSelectedComponent}/>
+      {renderComponent()}
+      <Footer setSelectedComponent={setSelectedComponent}/>
     </>
-  );
+  )
 }
 
 export default App;

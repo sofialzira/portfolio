@@ -1,20 +1,18 @@
 import BioContainer from "../components/BioContainerComponent/BioContainer";
-import NavBar from "../components/NavBar/NavBar";
 import SimpleContainer from "../components/SimpleContainer/SimpleContainer";
 // import aboutMeImage from '../assets/about-me.jpg';
 import projectsImage from '../assets/projects.jpg';
 import Links from "../components/LinksComponent/LinksComponent";
 import blogImage from '../assets/blog-image.jpg';
-import Footer from "../components/Footer/FooterComponent";
 import ServicesComponent from "../components/ServicesComponent/ServicesComponent";
 import SocialContainer from "../components/SocialComponent/SocialComponent";
 // import DataComponent from "../components/DataComponent/DataComponent";
 import ContactComponent from "../components/Contact/ContactComponent";
 
-function Homepage() {
-    return (
+function Homepage(props:any) {
+  const {setSelectedComponent} = props;  
+  return (
       <>
-        <NavBar />
         <div>
           <div className="row1">
             <div className="row1col1"> 
@@ -22,6 +20,7 @@ function Homepage() {
               bioJob="Fullstack Developer"
               bioName="Sofia Wood."
               bioDescription="Driven by creativity, curiosity and focused on fulfilling objectives, I am ready to bring a versatile approach to every project."
+              setSelectedComponent={setSelectedComponent}
             />
             </div>
             <div className="col2">
@@ -32,14 +31,17 @@ function Homepage() {
             img={blogImage}
             subtitle="Portfolio" 
             title="Design"
-            href="https://www.behance.net/sofiaoliveira-" target="_blank" rel="" />
+            href="https://www.behance.net/sofiaoliveira-" target="_blank" rel="" 
+            setSelectedComponent={null}/>
             </div>
             <div className="row1col3"> 
             <SimpleContainer 
             img={projectsImage}
             subtitle="Projects" 
             title="FS Web Developtment"
-            href="projects" />
+            href="projects" 
+            setSelectedComponent={setSelectedComponent}
+            />
             </div>
           </div>
           </div>
@@ -66,7 +68,6 @@ function Homepage() {
           </div>
         </div>
         </div>
-        <Footer />
       </>
     );
   }
