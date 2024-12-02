@@ -1,9 +1,3 @@
-@font-face {
-  font-family: "inter";
-  src: url()
-}
-
-
 :root {
   --bk-primary: #1a1a1d;
   --bk-container: #ffffff05;
