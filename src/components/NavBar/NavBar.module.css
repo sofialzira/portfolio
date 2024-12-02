@@ -53,6 +53,7 @@
 .button {
   width: 130px;
   height: 45px;
+  font-size: 12px;
   color: var(--t-white);
   background-color: var(--bk-menu-button);
   border-radius: 1.5rem;
