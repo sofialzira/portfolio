@@ -1,6 +1,4 @@
 import './About.css';
-import NavBar from "../../components/NavBar/NavBar";
-import Footer from "../../components/Footer/FooterComponent";
 import BioImage from "../../components/BioImage/BioImage";
 import BioDescription from '../../components/BioDescription/BioDescriptionComponent';
 import Credentials from '../../components/Credentials/CredentialsComponent';
