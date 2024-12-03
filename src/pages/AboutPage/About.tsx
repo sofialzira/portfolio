@@ -6,6 +6,7 @@ import SocialComponent from '../../components/SocialComponent/SocialComponent';
 import ContactComponent from '../../components/Contact/ContactComponent';
 import SimpleContainer from '../../components/SimpleContainer/SimpleContainer';
 import projectsImage from '../../assets/projects.jpg';
+import blogImage from '../../assets/blog-image.jpg';
 
 
 
@@ -93,11 +94,27 @@ function About() {
             subtitle="Projects" 
             title="Fullstack Web Developtment"
             href="projects" />
+
           {/* <SimpleContainer 
             img={aboutMeImage}
             subtitle="More about me" 
             title="Credentials" /> */}
           </div>
+          <div className='row3col3about'>
+          <SimpleContainer 
+            img={blogImage}
+            subtitle="Portfolio" 
+            title="Design"
+            href="https://www.behance.net/sofiaoliveira-" target="_blank" rel="" 
+            setSelectedComponent={null}/>
+
+          {/* <SimpleContainer 
+            img={aboutMeImage}
+            subtitle="More about me" 
+            title="Credentials" /> */}
+          </div>
+
+
 
         </div>
         </div>

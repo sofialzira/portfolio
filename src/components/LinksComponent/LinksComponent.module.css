@@ -96,4 +96,16 @@ a {
         padding: 2%;
 }
 
+.linkText {
+    font-size: 1rem;
+    font-weight: 500;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 70px;
+    align-content: center;
+}
+
 }

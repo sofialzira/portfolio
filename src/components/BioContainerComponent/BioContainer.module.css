@@ -127,4 +127,8 @@ border-radius: 2rem 0.5rem;
   width: 85%;
   height: 100%;
 }
+
+.bioImage {
+  width: 95%;
+}
 }
