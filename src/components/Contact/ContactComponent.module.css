@@ -48,16 +48,12 @@
     font-size: 45px;
 }
 
-/* .infoButtonContainer {
-    align-self: flex-end;
-  }
-  
-  .infoButton {
-      margin-right: 1rem;
-      font-size: 3rem;
-      color: var(--bk-round-button);
-  }
 
-  .infoButton:hover {
-    color: white;
-  } */
+
+  @media (max-width: 768px) {
+
+    .infoContainer {
+        text-align: center;
+    }
+
+}

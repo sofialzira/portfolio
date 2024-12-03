@@ -62,9 +62,38 @@ a {
 }
 
 @media (max-width: 768px) {
+
+
+.linksGeneralContainer {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    height: fit-content;
+}
+
+
 .vaiCaralho {
-gap: 5px;
-margin: 5px 5px 5px 5px;
+        gap: 15px;
+        margin: 5px 5px 5px 5px;
+        width: 98%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        align-content: space-between;
+        flex-direction: row;
+    
+}
+
+.linksWrapper {
+        gap: 1rem;
+        display: flex;
+        align-content: flex-end;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        flex-direction: column;
+        padding: 2%;
 }
 
 }
